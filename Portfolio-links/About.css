@@ -1,0 +1,74 @@
+/* CODE RESOURCES FROM : Jay Escoton (2023)
+   Don't Forget to Credit the respective Developer */
+.abt-cont {
+    display: flex;
+    margin: 40px 30px 0px 30px;
+}
+.conts {
+    width: 50%;
+    padding: 20px;
+}
+.abt-header {
+    text-align: center;
+    font-size: 60px;
+    text-decoration: overline;
+}
+.abt-parag {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+.abt-learnBtn {
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    color: white;
+    background: darkcyan;
+    font-size: 15px;
+    font-family: monospace;
+    margin-bottom: 20px;
+
+    margin: 10px;
+    border: none;
+}
+.abt-learnBtn:hover {
+    background: cyan;
+}
+.social-media {
+    margin-left: 80px;
+
+}
+.social-media > img {
+    width: 45px;
+    margin-left: 5px;
+}
+.social-media > img:hover {
+    border: 1px solid darkcyan;
+    border-radius: 50%;
+}
+.slides {
+    border-bottom: 2px solid black;
+    width: 80%;
+    height: 100%;
+    background: url(Images-link/icon-srvc-GameDev.png);
+    animation: slide 10s infinite;
+}
+@keyframes slide {
+    25% {
+        background: url(Images-link/Icon-srvc-Course.png);
+    }
+    50% {
+        background: url(Images-link/Icon-srvc-laptop.png);
+    }
+    75% {
+        background: url(Images-link/Icon-srvc-Marketing.png);
+    }
+    100% {
+        background: url(Images-link/icon-srvc-GameDev.png);
+    }
+}
+@media (max-width: 1000px) {
+    .slides {
+        visibility: hidden;
+    }
+}
